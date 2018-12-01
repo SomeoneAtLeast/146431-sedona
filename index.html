@@ -7,12 +7,12 @@
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
-  			<a href="#"> <img src="img\logo.svg" width="140" height="71" alt="Седона"> </a>
+  			<a href="#"> <img src="img\logo.svg" width="140" height="71" alt="Логотип Седоны"> </a>
   			<ul>
   				<li><a href="#">Информация</a></li>
   				<li><a href="#">Фото и видео</a></li>
   				<li><a href="#">Карта штата</a></li>
-  				<li><a href="#">Гостиницы</a></li>
+  				<li><a href="catalog.html">Гостиницы</a></li>
   			</ul>
   		</nav>
   	</header>
@@ -22,7 +22,31 @@
             заслуживающий большего!</b>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             <!--Фичи-->
-            <!--Форма поиска-->
+            <section>
+            	<h2 class="visually-hidden">Поиск гостиницы</h2>
+            	<b>Заинтересовались?</b>
+				<p>Укажите предполагаемые даты поездки, 
+				и мы покажем вам лучшие предложения гостиниц в седоне
+            	</p>
+            	<button type="button">Поиск гостиницы в Седоне</button>
+            	<form method="get">
+            		<fieldset>
+            			<label>Дата заезда:
+            				<input type="text" name="arrival date" placeholder="24 апреля 2017">
+            			</label>
+            			<label>Дата выезда:
+            				<input type="text" name="departure date" placeholder="4 июля 2017">
+            			</label>
+            			<label>Взрослые:
+            				<input type="text" name="grownup" placeholder="2">
+            			</label>
+            			<label>Дети:
+            				<input type="text" name="children" placeholder="2">
+            			</label>
+            		</fieldset>
+
+            	</form>
+        	</section>
   		</main>
   		<footer class="main-footer">
   			<p>#visitSEDONA</p>
