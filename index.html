@@ -7,7 +7,7 @@
   <body>
   	<header class="main-header">
   		<nav class="main-navigation">
-  			<a href="#"> <img src="img\logo.svg" width="140" height="71" alt="Логотип Седоны"> </a>
+  			<a href="#"> <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны"> </a>
   			<ul>
   				<li><a href="#">Информация</a></li>
   				<li><a href="#">Фото и видео</a></li>
@@ -23,37 +23,39 @@
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             <!--Фичи-->
             <section>
-            	<h2 class="visually-hidden">Поиск гостиницы</h2>
             	<b>Заинтересовались?</b>
 				<p>Укажите предполагаемые даты поездки, 
 				и мы покажем вам лучшие предложения гостиниц в седоне
             	</p>
-            	<button type="button">Поиск гостиницы в Седоне</button>
+            	<a href="#" class="modal-search-btn">Поиск гостиницы в Седоне</a>
+            </section>
+            <section class="modal">
+            	<h2 class="visually-hidden">Поиск гостиницы</h2>
             	<form method="get">
             		<fieldset>
             			<label>Дата заезда:
-            				<input type="text" name="arrival date" placeholder="24 апреля 2017">
+            				<input type="date" name="arrival-date" value="2017-04-24">
             			</label>
             			<label>Дата выезда:
-            				<input type="text" name="departure date" placeholder="4 июля 2017">
+            				<input type="date" name="departure-date" value="2017-07-04">
             			</label>
             			<label>Взрослые:
-            				<input type="text" name="grownup" placeholder="2">
+            				<input type="number" name="grownup" value="2">
             			</label>
             			<label>Дети:
-            				<input type="text" name="children" placeholder="2">
+            				<input type="number" name="children" value="0">
             			</label>
+            			<button type="submit">Найти</button>
             		</fieldset>
-
             	</form>
         	</section>
   		</main>
   		<footer class="main-footer">
   			<p>#visitSEDONA</p>
   			<div class="social">
-				<a href="#" class="btn social-btn-tw">Твиттер</a>
-  				<a href="#" class="btn social-btn-vk">ВКонтакте</a>
-  				<a href="#" class="btn social-btn-yout">Ютуб</a>
+				<a href="#" class="btn social-btn-tw">Мы в Твиттере</a>
+  				<a href="#" class="btn social-btn-vk">Мы в Контакте</a>
+  				<a href="#" class="btn social-btn-yout">Мы на Ютуб</a>
 			</div>
 			<div class="copyright">
 				<span>Website by</span>
