@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a href="#"> <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны"> </a>
-  			<ul>
-  				<li><a href="#">Информация</a></li>
-  				<li><a href="#">Фото и видео</a></li>
-  				<li><a href="#">Карта штата</a></li>
-  				<li><a href="catalog.html">Гостиницы</a></li>
-  			</ul>
-  		</nav>
-  	</header>
-  		<main>
-  			<!--Фон и картинка с текстом-->
-  			<b>Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</b>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-            <!--Фичи-->
-            <section>
+  	<head>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<title>HTML Academy: Седона</title>
+  	</head>
+  	<body>
+  		<header class="main-header">
+  			<nav class="main-navigation">
+  				<a href="#"> <img src="img/logo.svg" width="140" height="71" alt="логотип седоны"> </a>
+  				<ul>
+  					<li><a href="#">Информация</a></li>
+  					<li><a href="#">Фото и видео</a></li>
+  					<li><a href="#">Карта штата</a></li>
+  					<li><a href="catalog.html">Гостиницы</a></li>
+  				</ul>
+  			</nav>
+  		</header>
+  		<main class="main-content">
+  			<section class="welcome">
+  				<h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+  				<img src="img/index-welcome.svg" width="459" height="353" alt="Приветствие">
+  			</section>
+  			<section class="features">
+  				<h2 class="visually-hidden">О Седоне</h2>
+  				<b>Седона — небольшой городок в Аризоне,
+        		заслуживающий большего!</b>
+        		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    		</section>
+        	<section class="hotels">
+        		<h2 class="visually-hidden">Найти отель</h2>
             	<b>Заинтересовались?</b>
 				<p>Укажите предполагаемые даты поездки, 
 				и мы покажем вам лучшие предложения гостиниц в седоне
             	</p>
-            	<a href="#" class="modal-search-btn">Поиск гостиницы в Седоне</a>
-            </section>
-            <section class="modal">
+            	<a href="#" class="modal-search-btn"><span>Поиск гостиницы в Седоне</span></a>
+        	</section>
+        	<section class="modal">
             	<h2 class="visually-hidden">Поиск гостиницы</h2>
             	<form method="get">
             		<fieldset>
@@ -51,16 +60,16 @@
         	</section>
   		</main>
   		<footer class="main-footer">
-  			<p>#visitSEDONA</p>
+  			<p>#visitsedona</p>
   			<div class="social">
-				<a href="#" class="btn social-btn-tw">Мы в Твиттере</a>
-  				<a href="#" class="btn social-btn-vk">Мы в Контакте</a>
-  				<a href="#" class="btn social-btn-yout">Мы на Ютуб</a>
+				<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
+  				<a href="#" class="btn social-btn-vk"><span class="visually-hidden">Мы в Контакте</span></a>
+  				<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
 			</div>
 			<div class="copyright">
 				<span>Website by</span>
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/115x41" alt="HTML Academy"></a>
+				<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
 			</div>
   		</footer>
-  </body>
+  	</body>
 </html>

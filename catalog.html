@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<title>HTML Academy: Каталог отелей</title>
-</head>
-<body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a href="index.html"> <img src="http://placehold.it/140x71" alt="Седона"> </a>
-  			<ul>
-  				<li><a href="#">Информация</a></li>
-  				<li><a href="#">Фото и видео</a></li>
-  				<li><a href="#">Карта штата</a></li>
-  				<li><a href="#">Гостиницы</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>HTML Academy: Каталог отелей</title>
+	</head>
+	<body>
+		<header class="main-header">
+  			<nav class="main-navigation">
+  				<a href="index.html"> <img src="img/logo.svg" width="140" height="71" alt="логотип седоны"> </a>
+  				<ul>
+  					<li><a href="#">Информация</a></li>
+  					<li><a href="#">Фото и видео</a></li>
+  					<li><a href="#">Карта штата</a></li>
+  					<li><a href="index.html">Гостиницы</a></li>
+  				</ul>
+  			</nav>
+  		</header>
   		<main>
   			<article class="hotel-search" aria-label="Поиск отеля">
   				<section class="hotel-search-filter" aria-label="Параметры поиска"> 
@@ -24,56 +27,56 @@
   				<section class="hotel-search-list" aria-label="Результаты поиска">
   					<ul>
   						<li>
-  							<div aria-label="карточка отеля">
+  							<div class="hotel-search-item" aria-label="карточка отеля">
   								<img src="img/hotel-img1.jpg" width="135" height="90" alt="фото отеля">
-  								<h2>Amara Resort & Spa</h2>
+  								<a href="#" class="hotel-title">Amara Resort & Spa</a>
   								<span>Гостиница</span>
   								<span>От 4000 Р.</span>
-  								<a href="#">Подробнее</a>
-  								<a href="#">Забронировать</a>
+  								<a href="#" class="detail-btn"><span>Подробнее</span></a>
+  								<a href="#" class="book-btn"><span>Забронировать</span></a>
 
-  								<span>Рейтинг: 8,5</span>
+  								<span class="rating" >Рейтинг: 8,5</span>
   							</div>
   						</li>
   						<li>
-  							<div aria-label="карточка отеля">
+  							<div class="hotel-search-item" aria-label="карточка отеля">
   								<img src="img/hotel-img2.jpg" width="115" height="90" alt="фото отеля">
-  								<h2>Desert Quail Inn</h2>
+  								<a href="#" class="hotel-title">Desert Quail Inn</a>
   								<span>Мотель</span>
   								<span>От 3000 Р.</span>
-  								<a href="#">Подробнее</a>
-  								<a href="#">Забронировать</a>
+  								<a href="#" class="detail-btn"><span>Подробнее</span></a>
+  								<a href="#" class="book-btn"><span>Забронировать</span></a>
 
-  								<span>Рейтинг: 8,9</span>
+  								<span class="rating" >Рейтинг: 8,9</span>
   							</div>
   						</li>
   						<li>
-  							<div aria-label="карточка отеля">
+  							<div class="hotel-search-item" aria-label="карточка отеля">
   								<img src="img/hotel-img1.jpg" width="115" height="90" alt="фото отеля">
-  								<h2>Villas at Poco Diablo</h2>
+  								<a href="#" class="hotel-title">Villas at Poco Diablo</a>
   								<span>Апартаменты</span>
   								<span>От 2000 Р.</span>
-  								<a href="#">Подробнее</a>
-  								<a href="#">Забронировать</a>
+  								<a href="#" class="detail-btn"><span>Подробнее</span></a>
+  								<a href="#" class="book-btn"><span>Забронировать</span></a>
 
-  								<span>Рейтинг: 9,2</span>
+  								<span class="rating" >Рейтинг: 9,2</span>
   							</div>
   						</li>
   					</ul>
   				</section>
   			</article>
   		</main>
-  	<footer class="main-footer">
-  		<p>#visitSEDONA</p>
-  		<div class="social">
-				<a href="#" class="btn social-btn-tw">Мы в Твиттере</a>
-  				<a href="#" class="btn social-btn-vk">Мы в Контакте</a>
-  				<a href="#" class="btn social-btn-yout">Мы на Ютуб</a>
-		</div>
-		<div class="copyright">
-			<span>Website by</span>
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/115x41" alt="HTML Academy"></a>
-		</div>
-  	</footer>
-</body>
+		<footer class="main-footer">
+  			<p>#visitsedona</p>
+  			<div class="social">
+				<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
+  				<a href="#" class="btn social-btn-vk"><span class="visually-hidden">Мы в Контакте</span></a>
+  				<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
+			</div>
+			<div class="copyright">
+				<span>Website by</span>
+				<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
+			</div>
+  		</footer>
+	</body>
 </html>
