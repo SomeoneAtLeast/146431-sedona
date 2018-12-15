@@ -7,8 +7,6 @@ body {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #333;
-
-	background-color: #fff;
 }
 
 a {
@@ -16,56 +14,68 @@ a {
 	outline: 0;
 }
 
+.container {
+	background-color: #fff;
+	background-image: url("../img/polygon.svg"),
+	url("../img/index-background-photo.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-size: 1200px 508px, auto;
+	/*Положение "polygon.svg" задано временно*/
+	background-position: left 79%, 0% 0%;
+}
+
+/*Паддинги для "img" заданы временно*/
+.main-content img {
+	padding-top: 76px;
+	padding-bottom: 79px;
+}
+
+.main-header,
+.features,
+.hotels,
+.main-footer {
+	background-color: #fff;
+}
 .liststyle-reset {
 	list-style: none;
 }
 
-.main-navigation a,
-.features b, 
-.hotels b,
-.hotel-title,
-.main-footer p {
+.black-bold {
 	font-weight: 700;
 	color: #000;
 }
 
-.main-navigation a:active,
-.modal-search-btn:active span,
-.detail-btn:active span,
-.book-btn:active span,
+.interactive-styles:active {
+	opacity: 0.3;
+} 
+
+a.interactive-styles:hover,
+a.interactive-styles:focus {
+	color: #81b3d2;
+}
+
 .hotel-title:active,
 .btn:active::before {
 	opacity: 0.3;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
-	color: #81b3d2;
-}
 
-a.here {
+.here {
 	color: #766357;
 }
 
-.welcome {
-	background-image: url("../img/index-background-photo.jpg");
-	background-repeat: no-repeat;
-	background-size: 1200px 508px;
-	min-height: 508px;
-}
-
-.features b {
+.features .black-bold,
+.hotel-title {
 	font-size: 21px;
 }
 
-.hotels b {
+.hotels .black-bold {
 	font-size: 30px;
 	line-height: 36px;
 }
 
 .modal-search-btn {
 	font-size: 21px;
-	line-height: 26px;
 	color: #fff;
 
 	background-color: #766357;
@@ -85,18 +95,18 @@ a.here {
 	display: none;
 }
 
-.hotel-title {
-	font-size: 21px;
-}
-
 .hotel-title:hover,
 .hotel-title:focus
  {
 	color: #81b3d2;
 }
 
-.hotel-search-list span {
+.hotel-search-list {
 	line-height: 21px;
+}
+
+.hotel-title {
+	line-height: 26px;
 }
 
 .rating {
@@ -105,6 +115,7 @@ a.here {
 
 .detail-btn {
 	background-color: #81b3d2;
+	color: #fff;
 }
 
 .detail-btn:hover,
@@ -118,6 +129,7 @@ a.here {
 
 .book-btn {
 	background-color: #766357;
+	color: #fff;
 }
 
 .book-btn:hover,
@@ -129,14 +141,8 @@ a.here {
 	background-color: #503e33;
 }
 
-.detail-btn span,
-.book-btn span {
-	color: #fff;
-}
-
-.main-footer p {
+.main-footer .black-bold {
 	font-size: 21px;
-	line-height: 26px;
 }
 
 .btn {

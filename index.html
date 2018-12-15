@@ -8,67 +8,65 @@
     	<title>HTML Academy: Седона</title>
   	</head>
   	<body>
-  		<header class="main-header">
-  			<nav class="main-navigation">
-  				<a href="#"> <img src="img/logo.svg" width="140" height="71" alt="логотип седоны"> </a>
-  				<ul class="liststyle-reset">
-  					<li><a href="#">Информация</a></li>
-  					<li><a href="#">Фото и видео</a></li>
-  					<li><a href="#">Карта штата</a></li>
-  					<li><a href="catalog.html">Гостиницы</a></li>
-  				</ul>
-  			</nav>
-  		</header>
-  		<main class="main-content">
-  			<section class="welcome">
-  				<h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-  				<img src="img/index-welcome.svg" width="459" height="353" alt="Приветствие">
-  			</section>
-  			<section class="features">
-  				<h2 class="visually-hidden">О Седоне</h2>
-  				<b>Седона — небольшой городок в Аризоне,
-        		заслуживающий большего!</b>
-        		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    		</section>
-        	<section class="hotels">
-        		<h2 class="visually-hidden">Найти отель</h2>
-            	<b>Заинтересовались?</b>
-				<p>Укажите предполагаемые даты поездки, 
-				и мы покажем вам лучшие предложения гостиниц в седоне
-            	</p>
-            	<a href="#" class="modal-search-btn"><span>Поиск гостиницы в Седоне</span></a>
-        	</section>
-        	<div class="modal">
-            	<form method="get">
-            		<fieldset>
-            			<label>Дата заезда:
-            				<input type="date" name="arrival-date" value="2017-04-24">
-            			</label>
-            			<label>Дата выезда:
-            				<input type="date" name="departure-date" value="2017-07-04">
-            			</label>
-            			<label>Взрослые:
-            				<input type="number" name="grownup" value="2">
-            			</label>
-            			<label>Дети:
-            				<input type="number" name="children" value="0">
-            			</label>
-            			<button type="submit">Найти</button>
-            		</fieldset>
-            	</form>
-        	</div>
-  		</main>
-  		<footer class="main-footer">
-  			<p>#visitsedona</p>
-  			<div class="social">
-				<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
-  				<a href="#" class="btn social-btn-vk"><span class="visually-hidden">Мы в Контакте</span></a>
-  				<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
-			</div>
-			<div class="copyright">
-				<span>Website by</span>
-				<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
-			</div>
-  		</footer>
+  		<div class="container">
+  			<header class="main-header black-bold">
+  				<nav class="main-navigation black-bold">
+  					<a href="#"> <img src="img/logo.svg" width="140" height="71" alt="логотип седоны"> </a>
+  					<ul class="liststyle-reset">
+  						<li><a href="#" class="black-bold interactive-styles">Информация</a></li>
+  						<li><a href="#" class="black-bold interactive-styles">Фото и видео</a></li>
+  						<li><a href="#" class="black-bold interactive-styles">Карта штата</a></li>
+  						<li><a href="catalog.html" class="black-bold interactive-styles">Гостиницы</a></li>
+  					</ul>
+  				</nav>
+  			</header>
+  			<main class="main-content">
+  				<img src="img/index-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+  				<section class="features">
+  					<h2 class="visually-hidden">О Седоне</h2>
+  					<b class="black-bold">Седона — небольшой городок в Аризоне,
+        			заслуживающий большего!</b>
+        			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    			</section>
+        		<section class="hotels">
+            		<b class="black-bold">Заинтересовались?</b>
+					<p>Укажите предполагаемые даты поездки, 
+					и мы покажем вам лучшие предложения гостиниц в седоне
+            		</p>
+            		<a href="#" class="modal-search-btn"><span class="interactive-styles">Поиск гостиницы в Седоне</span></a>
+        		</section>
+        		<div class="modal">
+            		<form method="get">
+            			<fieldset>
+            				<label>Дата заезда:
+            					<input type="date" name="arrival-date" value="2017-04-24">
+            				</label>
+            				<label>Дата выезда:
+            					<input type="date" name="departure-date" value="2017-07-04">
+            				</label>
+            				<label>Взрослые:
+            					<input type="number" name="grownup" value="2">
+            				</label>
+            				<label>Дети:
+            					<input type="number" name="children" value="0">
+            				</label>
+            				<button type="submit">Найти</button>
+            			</fieldset>
+            		</form>
+        		</div>
+  			</main>
+  			<footer class="main-footer">
+  				<p class="black-bold">#visitsedona</p>
+  				<div class="social">
+					<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
+  					<a href="#" class="btn social-btn-vk"><span class="visually-hidden">Мы в Контакте</span></a>
+  					<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
+				</div>
+				<div class="copyright">
+					<span>Website by</span>
+					<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
+				</div>
+  			</footer>
+  		</div>
   	</body>
 </html>
