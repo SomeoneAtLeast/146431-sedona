@@ -7,6 +7,7 @@ body {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #333;
+	background-color: #fff;
 }
 
 a {
@@ -15,7 +16,6 @@ a {
 }
 
 .container {
-	background-color: #fff;
 	background-image: url("../img/polygon.svg"),
 	url("../img/index-background-photo.jpg");
 	background-repeat: no-repeat, no-repeat;
