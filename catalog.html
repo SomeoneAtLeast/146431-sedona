@@ -8,74 +8,94 @@
 		<title>HTML Academy: Каталог отелей</title>
 	</head>
 	<body>
-		<header class="main-header">
-  			<nav class="main-navigation">
-  				<a href="index.html"> <img src="img/logo.svg" width="140" height="71" alt="логотип седоны"> </a>
-  				<ul class="liststyle-reset">
-  					<li><a href="#" class="black-bold interactive-styles">Информация</a></li>
-  					<li><a href="#" class=
-					"black-bold interactive-styles">Фото и видео</a></li>
-  					<li><a href="#" class=
-					"black-bold interactive-styles">Карта штата</a></li>
-  					<li><a href="#" class="here black-bold interactive-styles">Гостиницы</a></li>
-  				</ul>
-  			</nav>
-  		</header>
-  		<main>
-  			<article class="hotel-search" aria-label="Поиск отеля">
-  				<section class="hotel-search-filter" aria-label="Параметры поиска"> 
-  					<!--Фильтр-->	
-  				</section>
-  				<section class="hotel-search-list" aria-label="Результаты поиска">
-  					<ul class="liststyle-reset">
-  						<li>
-  							<div class="hotel-search-item" aria-label="карточка отеля">
-  								<a href="#"><img src="img/hotel-img1.jpg" width="135" height="90" alt="фото отеля"></a>
-  								<a href="#" class="hotel-title black-bold">Amara Resort & Spa</a>
-  								<span>Гостиница</span>
-  								<span>От 4000 Р.</span>
-  								<a href="#" class="detail-btn"><span class="interactive-styles">Подробнее</span></a>
-  								<a href="#" class="book-btn"><span class="interactive-styles">Забронировать</span></a>
-  								<span class="rating" >Рейтинг: 8,5</span>
-  							</div>
-  						</li>
-  						<li>
-  							<div class="hotel-search-item" aria-label="карточка отеля">
-  								<a href="#"><img src="img/hotel-img2.jpg" width="135" height="90" alt="фото отеля"></a>
-  								<a href="#" class="hotel-title black-bold">Desert Quail Inn</a>
-  								<span>Мотель</span>
-  								<span>От 3000 Р.</span>
-  								<a href="#" class="detail-btn"><span class="interactive-styles">Подробнее</span></a>
-  								<a href="#" class="book-btn"><span class="interactive-styles">Забронировать</span></a>
-  								<span class="rating" >Рейтинг: 8,9</span>
-  							</div>
-  						</li>
-  						<li>
-  							<div class="hotel-search-item" aria-label="карточка отеля">
-  								<a href="#"><img src="img/hotel-img3.jpg" width="135" height="90" alt="фото отеля"></a>
-  								<a href="#" class="hotel-title black-bold">Villas at Poco Diablo</a>
-  								<span>Апартаменты</span>
-  								<span>От 2000 Р.</span>
-  								<a href="#" class="detail-btn"><span class="interactive-styles">Подробнее</span></a>
-  								<a href="#" class="book-btn"><span class="interactive-styles">Забронировать</span></a>
-  								<span class="rating" >Рейтинг: 9,2</span>
-  							</div>
-  						</li>
+		<div class="catalog-page-container">
+			<header class="main-header black-bold">
+  				<nav class="main-navigation black-bold">
+  					<a href="index.html" class="main-navigation-logo"> <img src="img/logo.svg" width="140" height="71" alt="седона"> </a>
+  					<ul class="main-navigation-menu liststyle-reset">
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles">Информация</a></li>
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles">Фото и видео</a></li>
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles">Карта штата</a></li>
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles here">Гостиницы</a></li>
   					</ul>
-  				</section>
-  			</article>
-  		</main>
-		<footer class="main-footer">
-  			<p class="black-bold">#visitsedona</p>
-  			<div class="social">
-				<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
-  				<a href="#" class="btn social-btn-vk"><span class="visually-hidden">Мы в Контакте</span></a>
-  				<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
-			</div>
-			<div class="copyright">
-				<span>Website by</span>
-				<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
-			</div>
-  		</footer>
+  				</nav>
+  			</header>
+  			<main class="main-content">
+  				<article class="hotel-search" aria-label="Поиск отеля">
+  					<section class="hotel-search-filter" aria-label="Параметры поиска"> 
+  						<!--Фильтр-->	
+  					</section>
+  					<section class="hotel-search-list" aria-label="Результаты поиска">
+  						<ul class="hotel-search-items liststyle-reset">
+  							<li class="hotel-search-item">
+  								<div class="hotel-container" aria-label="карточка отеля">
+  									<a href="#" class="hotel-page-link"><img src="img/hotel-img1.jpg" width="135" height="90" alt="фото отеля"></a>
+  									<div class="hotel-main-information">
+  										<a href="#" class="hotel-title black-bold">Amara Resort & Spa</a>
+  										<div class="type-price-block">
+  											<span class="hotel-type">Гостиница</span>
+  											<span class="hotel-price">От 4000 Р.</span>
+  										</div>
+  										<div class="detail-book-block">
+  											<a href="#" class="detail-btn"><span class="interactive-styles">Подробнее</span></a>
+  											<a href="#" class="book-btn"><span class="interactive-styles">Забронировать</span></a>
+  										</div>
+  									</div>
+  									<span class="rating" >Рейтинг: 8,5</span>
+  								</div>
+  							</li>
+  							<li class="hotel-search-item">
+  								<div class="hotel-container" aria-label="карточка отеля">
+  									<a href="#" class="hotel-page-link"><img src="img/hotel-img2.jpg" width="135" height="90" alt="фото отеля"></a>
+  									<div class="hotel-main-information">
+  										<a href="#" class="hotel-title black-bold">Desert Quail Inn</a>
+  										<div class="type-price-block">
+  											<span class="hotel-type">Мотель</span>
+  											<span class="hotel-price">От 3000 Р.</span>
+  										</div>
+  										<div class="detail-book-block">
+  											<a href="#" class="detail-btn"><span class="interactive-styles">Подробнее</span></a>
+  											<a href="#" class="book-btn"><span class="interactive-styles">Забронировать</span></a>
+  										</div>
+  									</div>
+  									<span class="rating" >Рейтинг: 8,9</span>
+  								</div>
+  							</li>
+  							<li class="hotel-search-item">
+  								<div class="hotel-container" aria-label="карточка отеля">
+  									<a href="#" class="hotel-page-link"><img src="img/hotel-img3.jpg" width="135" height="90" alt="фото отеля"></a>
+  									<div class="hotel-main-information">
+  										<a href="#" class="hotel-title black-bold">Villas at Poco Diablo</a>
+  										<div class="type-price-block">
+  											<span class="hotel-type">Апартаменты</span>
+  											<span class="hotel-price">От 2000 Р.</span>
+  										</div>
+  										<div class="detail-book-block">
+  											<a href="#" class="detail-btn"><span class="interactive-styles">Подробнее</span></a>
+  											<a href="#" class="book-btn"><span class="interactive-styles">Забронировать</span></a>
+  										</div>
+  									</div>
+  									<span class="rating" >Рейтинг: 9,2</span>
+  								</div>
+  							</li>
+  						</ul>
+  					</section>
+  				</article>
+  			</main>
+  			<footer class="main-footer">
+  				<div class="footer-container">
+  					<p class="hashtag black-bold">#visitsedona</p>
+  					<div class="social">
+						<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
+  						<a href="#" class="btn social-btn-f"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+  						<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
+					</div>
+					<div class="copyright">
+						<span class="copyright-by">Website by</span>
+						<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
+					</div>
+				</div>
+  			</footer>
+  		</div>
 	</body>
 </html>

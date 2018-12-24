@@ -8,32 +8,31 @@
     	<title>HTML Academy: Седона</title>
   	</head>
   	<body>
-  		<div class="container">
+  		<div class="index-page-container">
   			<header class="main-header black-bold">
   				<nav class="main-navigation black-bold">
-  					<a href="#"> <img src="img/logo.svg" width="140" height="71" alt="логотип седоны"> </a>
-  					<ul class="liststyle-reset">
-  						<li><a href="#" class="black-bold interactive-styles">Информация</a></li>
-  						<li><a href="#" class="black-bold interactive-styles">Фото и видео</a></li>
-  						<li><a href="#" class="black-bold interactive-styles">Карта штата</a></li>
-  						<li><a href="catalog.html" class="black-bold interactive-styles">Гостиницы</a></li>
+  					<a href="#" class="main-navigation-logo"> <img src="img/logo.svg" width="140" height="71" alt="седона"> </a>
+  					<ul class="main-navigation-menu liststyle-reset">
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles">Информация</a></li>
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles">Фото и видео</a></li>
+  						<li class="menu-item"><a href="#" class="black-bold interactive-styles">Карта штата</a></li>
+  						<li class="menu-item"><a href="catalog.html" class="black-bold interactive-styles">Гостиницы</a></li>
   					</ul>
   				</nav>
   			</header>
   			<main class="main-content">
-  				<img src="img/index-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+  				<img class="welcome-image" src="img/index-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
   				<section class="features">
   					<h2 class="visually-hidden">О Седоне</h2>
-  					<b class="black-bold">Седона — небольшой городок в Аризоне,
-        			заслуживающий большего!</b>
-        			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  					<b class="black-bold about-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        			<p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     			</section>
         		<section class="hotels">
-            		<b class="black-bold">Заинтересовались?</b>
-					<p>Укажите предполагаемые даты поездки, 
+            		<b class="black-bold interesting">Заинтересовались?</b>
+					<p class="better-hotels">Укажите предполагаемые даты поездки,<br>
 					и мы покажем вам лучшие предложения гостиниц в седоне
             		</p>
-            		<a href="#" class="modal-search-btn"><span class="interactive-styles">Поиск гостиницы в Седоне</span></a>
+            		<a href="#" class="modal-search-btn"><span class="modal-search-btn-text interactive-styles">Поиск гостиницы в Седоне</span></a>
         		</section>
         		<div class="modal">
             		<form method="get">
@@ -56,15 +55,17 @@
         		</div>
   			</main>
   			<footer class="main-footer">
-  				<p class="black-bold">#visitsedona</p>
-  				<div class="social">
-					<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
-  					<a href="#" class="btn social-btn-vk"><span class="visually-hidden">Мы в Контакте</span></a>
-  					<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
-				</div>
-				<div class="copyright">
-					<span>Website by</span>
-					<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
+  				<div class="footer-container">
+  					<p class="hashtag black-bold">#visitsedona</p>
+  					<div class="social">
+						<a href="#" class="btn social-btn-tw"><span class="visually-hidden">Мы в Твиттере</span></a>
+  						<a href="#" class="btn social-btn-f"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+  						<a href="#" class="btn social-btn-yout"><span class="visually-hidden">Мы на Ютуб</span></a>
+					</div>
+					<div class="copyright">
+						<span class="copyright-by">Website by</span>
+						<a class="copyright-logo" href="https://htmlacademy.ru/"><span class="visually-hidden">HTML Academy</span></a>
+					</div>
 				</div>
   			</footer>
   		</div>
