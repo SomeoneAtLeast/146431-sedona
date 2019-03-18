@@ -23,7 +23,70 @@
   			<main class="main-content">
   				<article class="hotel-search" aria-label="Поиск отеля">
   					<section class="hotel-search-filter" aria-label="Параметры поиска"> 
-  						<!--Фильтр-->	
+  						<form class="hotel-search-filter-form">
+  							<fieldset class="hotel-search-filter-form-infrastructure">
+  								<legend class="hotel-search-filter-form-infrastructure-name">Инфраструктура:</legend>
+  								<label class="infrastructure-checkbox">
+  									<input class="visually-hidden" type="checkbox" name="pool">
+  									<span class="checkbox-indicator"></span>
+  									<span>Бассейн</span>
+  								</label>
+  								<label class="infrastructure-checkbox">
+  									<input class="visually-hidden" type="checkbox" name="parking">
+  									<span class="checkbox-indicator"></span>
+  									<span>Парковка</span>
+  								</label>
+  								<label class="infrastructure-checkbox">
+  									<input class="visually-hidden" type="checkbox" name="wi-fi">
+  									<span class="checkbox-indicator"></span> 
+  									<span>wi-fi</span>
+  								</label>
+  							</fieldset>
+  							<fieldset class="hotel-search-filter-form-type">
+  								<legend class="hotel-search-filter-form-type-name">Тип жилья:</legend>
+  								<label class="infrastructure-checkbox">
+  									<input class="visually-hidden" type="checkbox" name="hotel">
+  									<span class="checkbox-indicator"></span>
+  									<span>Гостиница</span>
+  								</label>
+  								<label class="infrastructure-checkbox">
+  									<input class="visually-hidden" type="checkbox" name="motel">
+  									<span class="checkbox-indicator"></span>
+  									<span>Мотель</span>
+  								</label>
+  								<label class="infrastructure-checkbox">
+  									<input class="visually-hidden" type="checkbox" name="apartment">
+  									<span class="checkbox-indicator"></span> 
+  									<span>Апартаменты</span>
+  								</label>
+  							</fieldset>
+  							<fieldset class="hotel-search-filter-form-price">
+  								<legend class="hotel-search-filter-form-price-title">Стоимость в сутки (р):</legend>	
+  								<div class="hotel-search-filter-form-price-controls">
+  									<div>
+  										<label class="hotel-search-filter-form-min-price">От
+  											<input type="text" name="min-price" value="0">
+  										</label>
+  									</div>
+  									<div>
+  										<label class="hotel-search-filter-form-max-price">До
+  										<input type="text" name="max-price" value="3000">
+  										</label>
+  									</div>
+  								</div>
+  								<div class="hotel-search-filter-form-price-range-controls">
+  									<div class="hotel-search-filter-form-price-scale">
+  										<div class="hotel-search-filter-form-price-bar"></div>
+  									</div>
+  									<div class="hotel-search-filter-form-price-range-toggle range-toggle-min"></div>
+  									<div class="hotel-search-filter-form-price-range-toggle range-toggle-max"></div>
+  								</div>
+  								<button class="hotel-search-filter-form-price-btn" type="submit">Показать</button>
+  							</fieldset>
+  						</form>
+  					</section>
+  					<section class="hotel-sorting" aria-label="Сортировка">
+  						
   					</section>
   					<section class="hotel-search-list" aria-label="Результаты поиска">
   						<ul class="hotel-search-items liststyle-reset">

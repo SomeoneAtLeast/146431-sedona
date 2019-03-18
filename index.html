@@ -27,6 +27,52 @@
   					<b class="features-about-sedona black-bold">Седона — небольшой городок в Аризоне,<br>
   					заслуживающий большего!</b>
         			<p class="features-five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        			<div class="features-real-town">
+        				<h3 class="features-item-title">Настоящий<br> городок</h3>
+        				<span class="features-number">— №1 —</span>
+        				<p class="features-item-main-info">
+        				Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+        			</div>
+        			<img src="img/real-town.jpg" class="features-real-town-img" width="800" height="400">
+        			<div class="features-housing">
+        				<h3 class="features-item-title">Жильё</h3>
+        				<p class="features-item-main-info">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+        			</div>
+					<div class="features-food">
+						<h3 class="features-item-title">Еда</h3>
+						<p class="features-item-main-info">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+					</div>
+					<div class="features-souvenir">
+						<h3 class="features-item-title">Сувениры</h3>
+						<p class="features-item-main-info">Не только китайского, но и местного<br> производства!</p>
+					</div>
+					<img src="img/devil's-bridge.jpg" class="features-devils-bridge-img" width="800" height="255">
+        			<div class="features-devils-bridge">
+        				<h3 class="features-item-title">Там есть<br> 
+        				Мост дьявола</h3>
+        				<span class="features-number">— №2 —</span>
+        				<p class="features-item-main-info">
+        				Да, по нему можно пройти! Если, конечно,<br> вы осмелитесь</p>
+        			</div>
+        			<div class="gray-background-container">
+						<div class="features-small-area">
+							<h3 class="features-item-title">Небольшая<br> площадь</h3>
+							<span class="features-number">— №3 —</span>
+							<p class="features-item-main-info">Все достопримечательности<br> 
+							находятся очень близко</p>
+						</div>
+						<div class="features-beautiful-road">
+							<h3 class="features-item-title">Красивая<br> дорога</h3>
+							<span class="features-number">— №4 —</span>
+							<p class="features-item-main-info">Ехать в 	Седону из Лас-Вегаса совсем<br>
+							не скучно!</p>
+						</div>
+						<div class="features-few-tourists">
+							<h3 class="features-item-title">Мало<br> туристов</h3>
+							<span class="features-number">— №5 —</span>
+							<p class="features-item-main-info">Большинство едет в гранд каньон<br> и толпится там</p>
+						</div>
+					</div>
     			</section>
         		<section class="hotels">
             		<b class="hotels-interesting black-bold">Заинтересовались?</b>
@@ -34,23 +80,31 @@
 					и мы покажем вам лучшие предложения гостиниц в седоне
             		</p>
             		<a href="#" class="hotels-modal-btn"><span class="hotels-modal-btn-text interactive-styles">Поиск гостиницы в Седоне</span></a>
+            		<div class="hotels-map">
+            		</div>
         		</section>
         		<div class="hotels-modal">
             		<form method="get">
-            			<fieldset>
-            				<label>Дата заезда:
-            					<input type="date" name="arrival-date" value="2017-04-24">
+            			<fieldset class="hotels-modal-form black-bold">
+            				<label class="hotels-modal-form-item"><span class="hotels-modal-form-data-one">Дата заезда:</span>
+            					<input type="text" name="arrival-date" value="24 апреля 2017" class="hotels-modal-form-data black-bold">
             				</label>
-            				<label>Дата выезда:
-            					<input type="date" name="departure-date" value="2017-07-04">
+            				<button type="submit" class="arrival-date-btn"></button>
+            				<label class="hotels-modal-form-item"><span class="hotels-modal-form-data-two">Дата выезда:</span>
+            					<input type="text" name="departure-date" value="04 июля 2017" class="hotels-modal-form-data black-bold">
             				</label>
-            				<label>Взрослые:
-            					<input type="number" name="grownup" value="2">
+            				<button type="submit" class="departure-date-btn"></button>
+            				<label class="hotels-modal-form-item"><span class="hotels-modal-form-item-grownup">Взрослые:</span>
+            					<input type="text" name="grownup" value="2" class="black-bold">
             				</label>
-            				<label>Дети:
-            					<input type="number" name="children" value="0">
+            				<button type="submit" class="hotels-modal-form-item-grownup-btn-down"></button>
+            				<button type="submit" class="hotels-modal-form-item-grownup-btn-up"></button>
+            				<label class="hotels-modal-form-item"><span class="hotels-modal-form-item-children">Дети:</span>
+            					<input type="text" name="children" value="0" class="black-bold">
             				</label>
-            				<button type="submit">Найти</button>
+            				<button type="submit"class="hotels-modal-form-item-children-btn-down"></button>
+            				<button type="submit"class="hotels-modal-form-item-children-btn-up"></button>
+            				<button type="submit" class="hotels-modal-search-btn"><span class="hotels-modal-search-btn-text">Найти</span></button>
             			</fieldset>
             		</form>
         		</div>
