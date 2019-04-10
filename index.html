@@ -4,7 +4,7 @@
     	<meta charset="utf-8">
     	<link rel="stylesheet" type="text/css" href="css/normalize.css">
     	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
-    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/style-mini.css">
     	<title>HTML Academy: Седона</title>
   	</head>
   	<body>
@@ -33,7 +33,7 @@
         				<p class="features-item-main-info">
         				Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
         			</div>
-        			<img src="img/real-town.jpg" class="features-real-town-img" width="800" height="400">
+        			<img src="img/real-town.jpg" class="features-real-town-img" width="800" height="400" alt="дом в горах">
         			<div class="features-housing">
         				<h3 class="features-item-title">Жильё</h3>
         				<p class="features-item-main-info">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
@@ -46,7 +46,7 @@
 						<h3 class="features-item-title">Сувениры</h3>
 						<p class="features-item-main-info">Не только китайского, но и местного<br> производства!</p>
 					</div>
-					<img src="img/devil's-bridge.jpg" class="features-devils-bridge-img" width="800" height="255">
+					<img src="img/devil's-bridge.jpg" class="features-devils-bridge-img" width="800" height="255" alt="мост дьявола">
         			<div class="features-devils-bridge">
         				<h3 class="features-item-title">Там есть<br> 
         				Мост дьявола</h3>
@@ -74,12 +74,15 @@
 						</div>
 					</div>
     			</section>
+            <input type="checkbox" name="modal-show" id="modal-show-checkbox">
         		<section class="hotels">
             		<b class="hotels-interesting black-bold">Заинтересовались?</b>
 					<p class="hotels-better-hotels">Укажите предполагаемые даты поездки, <br>
 					и мы покажем вам лучшие предложения гостиниц в седоне
             		</p>
-            		<a href="#" class="hotels-modal-btn"><span class="hotels-modal-btn-text interactive-styles">Поиск гостиницы в Седоне</span></a>
+                <label for="modal-show-checkbox">
+            		  <a class="hotels-modal-btn"><span class="hotels-modal-btn-text interactive-styles">Поиск гостиницы в Седоне</span></a>
+                </label>
             		<div class="hotels-map">
             		</div>
         		</section>
@@ -102,8 +105,8 @@
             				<label class="hotels-modal-form-item"><span class="hotels-modal-form-item-children">Дети:</span>
             					<input type="text" name="children" value="0" class="black-bold">
             				</label>
-            				<button type="submit"class="hotels-modal-form-item-children-btn-down"></button>
-            				<button type="submit"class="hotels-modal-form-item-children-btn-up"></button>
+            				<button type="submit" class="hotels-modal-form-item-children-btn-down"></button>
+            				<button type="submit" class="hotels-modal-form-item-children-btn-up"></button>
             				<button type="submit" class="hotels-modal-search-btn"><span class="hotels-modal-search-btn-text">Найти</span></button>
             			</fieldset>
             		</form>
